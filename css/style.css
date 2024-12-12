@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.image-header {
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-image: url('../public/image.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 77, 77, 0.164);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.image-header h1 {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.menu .submenu {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.menu-father {
+    position: relative;
+}
+
+.menu .submenu .li ul {
+    width: 259px;
+    display: none;
+    position: absolute;
+    top: 50px;
+    padding-left: 0px;
+}
+
+.menu-father ul li {
+    text-align: center;
+    justify-content: left;
+    list-style-type: none;
+    width: 259px;
+    height: 50px;
+    border: 1px solid black;
+    border-top: none;
+}
+
+.menu-father ul li a {
+    text-decoration: none;
+}
+
+.menu .submenu .li {
+    list-style-type: none;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px black solid;
+}
+
+.menu .submenu .li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.arrow {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.menu .li:hover .arrow {
+    transform: rotate(180deg);
+}
+
+.menu li:hover {
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
+.menu .li:hover ul {
+    display: block;
+    z-index: 1;
+}
+
+.menu .li ul {
+    background-color: white;
+}
+
+/* Content */
+.content {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+/* Footer */
+.name-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    height: 100px;
+    background-image: url('../public/image.png');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.name-footer li {
+    position: relative;
+    z-index: 2;
+    list-style-type: none;
+    color: rgb(241, 241, 241);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+footer {
+    position: relative;
+}
